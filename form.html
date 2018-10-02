@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aplikasi Pendaftaran Mahasiswa</title>
+</head>
+<body>
+	<h5>APLIKASI PENDAFTARAN MAHASISWA</h5>
+	<table>
+		<form method="post"	action="proses.php">
+			<tr>
+				<td>Nim</td>
+				<td>:</td>
+				<td><input type="text" name="nim"></td>
+			</tr>
+			<tr>
+				<td>Nama</td>
+				<td>:</td>
+				<td>
+				<input type="text" name="nama" required="diisi form nya"></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>:</td>
+				<td><input type="email" name="email" id="RegisterEmail" required>
+				</td>
+			</tr>
+			<tr>
+				<td>janis Kelamin</td>
+				<td>:</td>
+				<td>
+					<input type="radio" name="jk[]" value="Laki Laki">Laki Laki
+					<input type="radio" name="jk[]" value="Perempuan">Perempuan
+				</td>
+			</tr>
+			<tr>
+				<td>Program Studi</td>
+				<td>:</td>
+				<td>
+					<select>
+						<option value="si">D3 Sistem Informasi</option>
+						<option value="tk">D3 Teknologi Komputer</option>
+						<option value="tt">D3 Teknologi Telekomunikasi</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Hobi</td>
+				<td>:</td>
+				<td>
+					<input type="checkbox" name="hobi" value="bola">Bermain Bola
+					<input type="checkbox" name="hobi" value="basket">Bermain Basket
+					<input type="checkbox" name="hobi" value="tenis">Bermain Tenis
+				</td>
+			</tr>
+			<tr>
+				<td>Uplode Foto 3x4</td>
+				<td>:</td>
+				<td><input type="file" name="foto"></td>
+			</tr>			
+			<tr>
+				<td></td>
+				<td></td>
+				<td>
+					<input type="reset" name="reset" value="Reset Data">
+					<input type="submit" name="submit"	value="selesai">
+				</td>
+			</tr>
+		</form>
+	</table>
+</body>
+</html>
